@@ -24,7 +24,7 @@ export default function DistanceSalesPage() {
         <div className="prose prose-invert max-w-none text-gray-300 space-y-8 text-sm leading-relaxed">
           <section>
             <h2 className="text-lg font-bold text-white uppercase tracking-tight mb-2">1. Taraflar</h2>
-            <p><strong>SATICI:</strong> Ahsan Çoban - AutoStep (Bundan sonra "SATICI" olarak anılacaktır)<br/>Adres: Hasanefendi - Ramazan Paşa Mah. Efeler / Aydın, 09100<br/>E-posta: destek@autostep.com.tr</p>
+            <p><strong>SATICI:</strong> Ercan Cansu - AutoStep (Bundan sonra "SATICI" olarak anılacaktır)<br/>Adres: Hasanefendi - Ramazan Paşa Mah. Efeler / Aydın, 09100<br/>E-posta: destek@autostep.com.tr</p>
             <p><strong>ALICI:</strong> www.autostep.com sitesi üzerinden hizmet satın alan gerçek veya tüzel kişi.</p>
           </section>
 
