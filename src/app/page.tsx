@@ -262,8 +262,8 @@ export default async function LandingPage() {
                        <span className="group-hover:text-white transition-colors">destek@autostep.com.tr</span>
                    </div>
                    <div className="flex items-center gap-3 group">
-                       <MapPin size={16} className="text-purple-500"/>
-                       <span className="group-hover:text-white transition-colors">Maslak, İstanbul</span>
+                       <MapPin size={16} className="text-purple-500 shrink-0"/>
+                       <span className="group-hover:text-white transition-colors">Hasanefendi - Ramazan Paşa Mah. Efeler / Aydın</span>
                    </div>
                </div>
 
