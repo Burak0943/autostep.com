@@ -173,7 +173,7 @@ export default async function LandingPage() {
              {/* Calendly Iframe */}
              <div className="w-full h-[700px] bg-gray-50 rounded-3xl border border-gray-200 overflow-hidden shadow-2xl">
                  <iframe 
-                    src="https://calendly.com/cobanahsan/30min" 
+                    src="https://calendly.com/autostep-tr/30min" 
                     width="100%" 
                     height="100%" 
                     frameBorder="0"
