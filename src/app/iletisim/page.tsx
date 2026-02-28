@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 import { 
   Zap, Check, User, Search, Globe, ArrowRight, 
   ShoppingCart, BarChart2, Share2, FileText,
-  Mail, MapPin, MessageCircle, Calendar 
+  Mail, MapPin, MessageCircle, Calendar // Tüm ikonlar eklendi
 } from 'lucide-react'
 
 export default async function LandingPage() {
@@ -91,7 +91,7 @@ export default async function LandingPage() {
                 </div>
             </div>
             
-            {/* SAĞ DASHBOARD GÖRSELİ */}
+            {/* SAĞ DASHBOARD */}
             <div className="flex-1 w-full transform hover:scale-[1.01] transition-transform duration-700 relative z-10">
                 <div className="relative bg-white rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-gray-200 overflow-hidden animate-in fade-in zoom-in duration-1000 delay-200">
                     <div className="h-12 border-b border-gray-100 bg-white flex items-center px-4 gap-2">
@@ -157,7 +157,7 @@ export default async function LandingPage() {
          </div>
       </section>
 
-      {/* --- CALENDLY TOPLANTI MODÜLÜ (GÜNCELLENDİ) --- */}
+      {/* --- CALENDLY TOPLANTI MODÜLÜ --- */}
       <section id="meeting" className="py-24 bg-white border-t border-gray-100">
          <div className="max-w-6xl mx-auto px-6">
              <div className="text-center mb-12">
@@ -173,7 +173,7 @@ export default async function LandingPage() {
              {/* Calendly Iframe */}
              <div className="w-full h-[700px] bg-gray-50 rounded-3xl border border-gray-200 overflow-hidden shadow-2xl">
                  <iframe 
-                    src="https://calendly.com/cobanahsan/30min" 
+                    src="https://calendly.com/ekip-dopsistemi/30dk" 
                     width="100%" 
                     height="100%" 
                     frameBorder="0"
@@ -221,12 +221,13 @@ export default async function LandingPage() {
          </div>
       </section>
 
-      {/* --- FOOTER (PayTR Uyumlu Yasal Linklerle) --- */}
+      {/* --- FOOTER (GÜNCELLENDİ: 4 SÜTUNLU YAPI) --- */}
       <footer className="bg-black text-white py-16 border-t border-gray-800">
          <div className="max-w-7xl mx-auto px-6">
+            {/* 4 Sütunlu Grid Yapısı */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                
-               {/* Kolon 1: Logo */}
+               {/* Kolon 1: Logo ve Slogan */}
                <div className="space-y-4">
                    <div className="flex items-center gap-2">
                        <Zap size={20} fill="currentColor" className="text-yellow-400" />
@@ -245,36 +246,47 @@ export default async function LandingPage() {
                    <Link href="#pricing" className="hover:text-white transition-colors">Fiyatlandırma</Link>
                </div>
 
-               {/* Kolon 3: Kurumsal & Yasal Metinler */}
+               {/* Kolon 3: Kurumsal */}
                <div className="flex flex-col gap-3 text-sm text-gray-400">
-                   <h4 className="font-bold text-white mb-2">Kurumsal & Yasal</h4>
-                   <Link href="/iletisim" className="hover:text-white transition-colors">İletişim</Link>
-                   <Link href="/iptal-iade" className="hover:text-white transition-colors">İptal ve İade Koşulları</Link>
+                   <h4 className="font-bold text-white mb-2">Kurumsal</h4>
+                   <Link href="/yardim-merkezi" className="hover:text-white transition-colors">Yardım Merkezi</Link>
                    <Link href="/gizlilik-politikasi" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
-                   <Link href="/mesafeli-satis-sozlesmesi" className="hover:text-white transition-colors">Mesafeli Satış Sözleşmesi</Link>
+                   <Link href="/kullanim-sartlari" className="hover:text-white transition-colors">Kullanım Şartları</Link>
                </div>
 
-               {/* Kolon 4: İletişim */}
+               {/* Kolon 4: İletişim (İSTENEN KISIM) */}
                <div className="flex flex-col gap-4 text-sm text-gray-400">
-                   <h4 className="font-bold text-white mb-2">Destek</h4>
+                   <h4 className="font-bold text-white mb-2">Bize Ulaşın</h4>
+                   
                    <div className="flex items-center gap-3 group">
-                       <Mail size={16} className="text-blue-500"/>
-                       <span className="group-hover:text-white transition-colors">destek@autostep.com.tr</span>
+                       <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center text-blue-500 shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                           <Mail size={16} />
+                       </div>
+                       <span className="group-hover:text-white transition-colors">support@autostep.com</span>
                    </div>
+
                    <div className="flex items-center gap-3 group">
-                       <MapPin size={16} className="text-purple-500"/>
+                       <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center text-purple-500 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                           <MapPin size={16} />
+                       </div>
                        <span className="group-hover:text-white transition-colors">Maslak, İstanbul</span>
+                   </div>
+
+                   <div className="flex items-center gap-3 group">
+                       <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center text-green-500 shrink-0 group-hover:bg-green-600 group-hover:text-white transition-all">
+                           <MessageCircle size={16} />
+                       </div>
+                       <span className="group-hover:text-white transition-colors">Discord Topluluğu</span>
                    </div>
                </div>
 
             </div>
 
-            {/* Alt Telif ve Güvenli Ödeme */}
+            {/* Alt Telif */}
             <div className="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
                <p>© 2026 AutoStep Inc. Tüm hakları saklıdır.</p>
-               <div className="flex items-center gap-4">
-                   <span>Güvenli Ödeme Altyapısı</span>
-                   <div className="font-black text-white tracking-widest">PayTR</div> 
+               <div className="flex items-center gap-2">
+                   <Globe size={14}/> <span>TR - Türkçe</span>
                </div>
             </div>
          </div>
